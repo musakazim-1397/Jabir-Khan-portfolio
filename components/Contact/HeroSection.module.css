@@ -29,9 +29,16 @@
     margin: 2rem;
     color: #474747;
     font-size: 1.1rem;
+    position: relative;
+    z-index: 2;
 }
 @media screen and (max-width:410px){
     .container{
         margin-left: 2rem;
     }
+}
+
+.link{
+    position: relative;
+    z-index: 2;
 }
