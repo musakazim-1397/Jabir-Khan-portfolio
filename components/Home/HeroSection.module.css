@@ -1,0 +1,182 @@
+.container{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    width: 100%;
+    background-color: #F9F9F9;
+    padding: 2rem 0rem 4rem 0rem;
+}
+.leftSection{
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 37rem;
+    margin-top: 2rem;
+    position: relative;
+    margin-left: 2rem;
+}
+
+.leftHeadingOuter{
+    color: #000;
+    font-size: 3.5rem;
+    display: inline;
+}
+.leftHeading{
+    color: #000;
+    font-size: 3.5rem;
+    display: inline;
+    line-height: 1.3;
+}
+.shadedBG{
+    background-color: #918e8e77;
+}
+.leftPara{
+    color: #464646;
+    margin: 2rem 0rem;
+
+}
+.seeMyWork{
+    color: #000;
+    margin-right: 8px;
+    position: relative;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+.seeMyWorkCircle{
+    position: absolute;
+    top: -61%;
+    left: -10%;
+    background-color: #c3bfbf80;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    transition: all 0.5s ease-in-out;
+}
+.seeMyWork:hover .seeMyWorkCircle{
+    width: 170px;
+    border-radius: 10px;
+}
+
+
+.rightSection{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+    position: relative;
+    margin-right: 2rem;
+}
+.rightImage{
+    max-width: 25rem;
+    min-width: 22rem;
+}
+.rightImage img{
+    width: 100%;
+    height: 100%;
+}
+.rightScrollDown{
+    color: #000;
+    font-weight: bold;
+    position: absolute;
+    rotate: 90deg;
+    bottom: 16%;
+    right: -3.5%;
+    display: flex;
+    align-items: center;
+}
+
+.outerContainer{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+@media screen and (max-width:1124px){
+    .leftHeading{
+        font-size: 3rem;
+    }
+    .rightScrollDown{
+        right: -5.5%;
+    }
+}
+@media screen and (max-width:1045px){
+    .leftHeading{
+        font-size: 2.7rem;
+    }
+    .rightImage{
+        max-width: 20rem;
+    }
+}
+@media screen and (max-width:945px){
+    .leftHeading{
+        font-size: 2.5rem;
+        line-height: 1;
+    }
+    .leftHeadingOuter{
+        line-height: 1;
+    }
+    .leftPara{
+        font-size: 13px;
+    }
+    .rightScrollDown{
+        right: -6.5%;
+    }
+  
+}
+
+@media screen and (max-width:850px) {
+    .container{
+        flex-direction:column-reverse;
+    }
+    .leftSection{
+        margin-right: 0.5rem;
+        max-width: 30rem;
+        margin-left: 0.5rem;
+    }
+    .rightSection{
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+    .leftHeadingOuter{
+        line-height: 0.8;
+    }
+    .rightScrollDown{
+        right: -7.5%;
+        bottom: 13%;
+    }
+}
+
+@media screen and (max-width:760px) {
+    .rightScrollDown{
+        right: -8.5%;
+    }
+}
+@media screen and (max-width:700px) {
+    .rightScrollDown{
+        right: -10.5%;
+    }
+}
+@media screen and (max-width:650px){
+    .leftHeading{
+        font-size: 2.2rem;
+        line-height: 1.1;
+    }
+    .leftHeadingOuter{
+        line-height: 0.5;
+    }
+    .rightImage{
+        max-width: 18rem;
+        min-width: 16rem;
+    }
+    .leftSection{
+        margin: 0 1.5rem;
+    }
+    .rightScrollDown{
+        visibility: hidden;
+    }
+}

@@ -1,0 +1,80 @@
+.container{
+    width: 100%;
+    height: max-content;
+    background-color: white;
+    margin-bottom: 6rem;
+    margin-left: 13rem;
+    padding-right: 3.5rem;
+}
+.projectName{
+    color: #000;
+    font-size: 2.5rem;
+}
+.projectPara{
+    color: #474747;
+    max-width: 39rem;
+    line-height: 38px;
+    font-size: 18px;
+    margin: 2rem 0;
+}
+.projectIndex{
+    color: #474747;
+    margin-right: 27px;
+    min-width: 25px;
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.gitHubProject{
+    display: flex;
+    align-items: center;
+}
+.projectLink{
+    text-decoration: underline;
+    color: #474747;
+    margin-right: 27px;
+}
+.linkName{
+    text-decoration: underline;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+@media screen and (max-width:905px){
+    .container{
+        margin-left: 6rem;
+    }
+}
+@media screen and (max-width:805px){
+    .container{
+        margin-left: 3rem;
+    }
+}
+@media screen and (max-width:710px){
+    .projectPara{
+        max-width: 33rem;
+        padding-right: 1rem;
+    }
+}
+@media screen and (max-width:625px){
+    .linkName{
+        font-size: 1.1rem;
+    }
+}
+@media screen and (max-width:580px){
+   .container{
+    margin-left: 1.5rem;
+   }
+ 
+}
+
+@media screen and (max-width:480px){
+   .linkName{
+    display: flex;
+    text-align: start;
+   }
+}

@@ -1,0 +1,427 @@
+.container{
+    width: 100%;
+    height: max-content;
+    padding: 7rem 2rem 5rem 2rem;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    position: relative;
+}
+.leftSection{
+    display: flex;
+    max-width: 10rem;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 15%;
+    left: 14%;
+}
+
+
+.rightSection{
+    display: flex;
+    flex-direction: column;
+    max-width: 35rem;
+    padding-left: 1.5rem;
+}
+.heading{
+    color: #000;
+    font-size: 1.4rem;
+    letter-spacing: 1.1px;
+}
+.para{
+    color: #464646;
+    font-size: 18px;
+    line-height: 31px;
+}
+
+.gridContainer{
+    display: grid;
+    color: #000;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-areas: 
+        "heading1 heading2 heading2 heading2 heading3 heading3"
+        "design1 web1 web21 web31 ml1 ml21"
+        "design2 web2 web22 web32 ml2 ml22"
+        "design3 web3 web23 web33 ml3 ml23"
+        "design4 web4 web24 web34 ml4 ml24"
+        "design5 web5 web25 web35 ml5 ml25"
+        "design6 web6 web26 web36 ml6 ml26";
+        align-items: center;
+        justify-items: flex-start;
+        gap: 1rem 3rem;
+}
+
+.heading1{
+    grid-area: heading1;
+    font-weight: bold;
+}
+.heading2{
+    grid-area: heading2;
+    font-weight: bold;
+}
+.heading3{
+    grid-area: heading3;
+    font-weight: bold;
+}
+
+.design1{
+    grid-area: design1;
+}
+.design2{
+    grid-area: design2;
+}
+.design3{
+    grid-area: design3;
+}
+.design4{
+    grid-area: design4;
+}
+.design5{
+    grid-area: design5;
+}
+.design6{
+    grid-area: design6;
+}
+
+.web1{
+    grid-area: web1;
+}
+.web2{
+    grid-area: web2;
+}
+.web3{
+    grid-area: web3;
+}
+.web4{
+    grid-area: web4;
+}
+.web5{
+    grid-area: web5;
+}
+.web6{
+    grid-area: web6;
+}
+
+.web21{
+    grid-area: web21;
+}
+.web22{
+    grid-area: web22;
+}
+.web23{
+    grid-area: web23;
+}
+.web24{
+    grid-area: web24;
+}
+.web25{
+    grid-area: web25;
+}
+.web26{
+    grid-area: web26;
+}
+
+.web31{
+    grid-area: web31;
+}
+.web32{
+    grid-area: web32;
+}
+.web33{
+    grid-area: web33;
+}
+.web34{
+    grid-area: web34;
+}
+.web35{
+    grid-area: web35;
+}
+.web36{
+    grid-area: web36;
+}
+
+.ml1{
+    grid-area: ml1;
+}
+.ml2{
+    grid-area: ml2;
+}
+.ml3{
+    grid-area: ml3;
+}
+.ml4{
+    grid-area: ml4;
+}
+.ml5{
+    grid-area: ml5;
+}
+.ml6{
+    grid-area: ml6;
+}
+
+.ml21{
+    grid-area: ml21;
+}
+.ml22{
+    grid-area: ml22;
+}
+.ml23{
+    grid-area: ml23;
+}
+.ml24{
+    grid-area: ml24;
+}
+.ml25{
+    grid-area: ml25;
+}
+.ml26{
+    grid-area: ml26;
+}
+
+.design1, .web1, .web21, .web31, .ml1, .ml21{
+    min-width: 7rem;
+}
+
+.heading2{
+    display: grid;
+    justify-self: center;
+}
+
+.moveHeadingParaToRight{
+    margin-left: 13rem;
+    min-width: 33rem;
+}
+
+@media screen and (max-width:1250px){
+    .gridContainer{
+        grid-template-columns: repeat(4,1fr);
+        grid-template-areas: 
+            "heading1 heading2 heading2 heading2"
+            "design1 web1 web21 web31 "
+            "design2 web2 web22 web32 "
+            "design3 web3 web23 web33 "
+            "design4 web4 web24 web34 "
+            "design5 web5 web25 web35 "
+            "design6 web6 web26 web36 "
+            "heading3 heading3 none none"
+            "ml1 ml21 none none"
+            "ml2 ml22 none none"
+            "ml3 ml23 none none"
+            "ml4 ml24 none none"
+            "ml5 ml25 none none"
+            "ml6 ml26 none none"
+            ;
+            align-items: center;
+            justify-items: flex-start;
+            gap: 1rem 3rem;
+    }
+    .heading3{
+        margin-top: 2rem;
+    }
+    .container{
+        justify-content: space-between;
+    }
+    .leftSection{
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    .moveHeadingParaToRight{
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:985px){
+    .container{
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+    .gridContainer{
+        gap: 1rem 1rem;
+    }
+    .moveHeadingParaToRight{
+        max-width: 32rem;
+        min-width: 25rem;
+    }
+}
+@media screen and (max-width:650px){
+    .moveHeadingParaToRight{
+        max-width: 25rem;
+        min-width: 20rem;
+    }
+}
+
+@media screen and (max-width:560px){
+    .gridContainer{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-areas: 
+            "heading1 . ."
+            "design1 .  ."
+            "design2 .  ."
+            "design3 . ."
+            "design4 . ."
+            "design5 . ."
+            "design6 . ."
+            "heading2 heading2 heading2"
+            "web1 web21 web31"
+            "web2 web22 web32"
+            "web3 web23 web33"
+            "web4 web24 web34"
+            "web5 web25 web35"
+            "web6 web26 web36"
+            "heading3 heading3 none"
+            "ml1 ml21 none "
+            "ml2 ml22 none"
+            "ml3 ml23  none"
+            "ml4 ml24  none"
+            "ml5 ml25  none"
+            "ml6 ml26  none";
+            align-items: center;
+            justify-items: flex-start;
+            gap: 1rem 1rem;
+    }
+
+    .heading1{
+        grid-area: heading1;
+        font-weight: bold;
+    }
+    .heading2{
+        grid-area: heading2;
+        font-weight: bold;
+    }
+    .heading3{
+        grid-area: heading3;
+        font-weight: bold;
+    }
+    
+    .design1{
+        grid-area: design1;
+    }
+    .design2{
+        grid-area: design2;
+    }
+    .design3{
+        grid-area: design3;
+    }
+    .design4{
+        grid-area: design4;
+    }
+    .design5{
+        grid-area: design5;
+    }
+    .design6{
+        grid-area: design6;
+    }
+    
+    .web1{
+        grid-area: web1;
+    }
+    .web2{
+        grid-area: web2;
+    }
+    .web3{
+        grid-area: web3;
+    }
+    .web4{
+        grid-area: web4;
+    }
+    .web5{
+        grid-area: web5;
+    }
+    .web6{
+        grid-area: web6;
+    }
+    
+    .web21{
+        grid-area: web21;
+    }
+    .web22{
+        grid-area: web22;
+    }
+    .web23{
+        grid-area: web23;
+    }
+    .web24{
+        grid-area: web24;
+    }
+    .web25{
+        grid-area: web25;
+    }
+    .web26{
+        grid-area: web26;
+    }
+    
+    .web31{
+        grid-area: web31;
+    }
+    .web32{
+        grid-area: web32;
+    }
+    .web33{
+        grid-area: web33;
+    }
+    .web34{
+        grid-area: web34;
+    }
+    .web35{
+        grid-area: web35;
+    }
+    .web36{
+        grid-area: web36;
+    }
+    
+    .ml1{
+        grid-area: ml1;
+    }
+    .ml2{
+        grid-area: ml2;
+    }
+    .ml3{
+        grid-area: ml3;
+    }
+    .ml4{
+        grid-area: ml4;
+    }
+    .ml5{
+        grid-area: ml5;
+    }
+    .ml6{
+        grid-area: ml6;
+    }
+    
+    .ml21{
+        grid-area: ml21;
+    }
+    .ml22{
+        grid-area: ml22;
+    }
+    .ml23{
+        grid-area: ml23;
+    }
+    .ml24{
+        grid-area: ml24;
+    }
+    .ml25{
+        grid-area: ml25;
+    }
+    .ml26{
+        grid-area: ml26;
+    }
+}
+
+@media screen and (max-width:400px){
+    .gridContainer{
+        padding: 0 1rem;
+    }
+    .rightSection{
+        padding-left: 3.5rem;
+    }
+    .moveHeadingParaToRight{
+        padding: 0 1rem;
+        max-width: 23rem;
+        min-width: 9rem;
+    }
+}

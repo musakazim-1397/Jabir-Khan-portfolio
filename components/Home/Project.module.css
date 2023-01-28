@@ -1,0 +1,225 @@
+.container{
+    width: 100%;
+    height: 40vh;
+    background-color: #F8F8F8;
+    border-bottom: 1px solid rgb(181 175 175 / 46%);;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.5s ease-in-out;
+}
+.container:hover{
+    background-color: white;
+}
+
+.leftSide{
+    display: flex;
+    max-width: 20rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.horizontalLine{
+    border-bottom: 1px solid rgb(181 175 175 / 46%);
+    width: 120px;
+    transition: all 0.5s ease-in-out;
+}
+.container:hover .horizontalLine{
+    border-bottom: 1px solid rgba(88, 87, 87, 0.788);
+    width: 150px;
+}
+.container:hover .projectIndex{
+    color: #797878;
+    font-size: 22px;
+    margin: 0 25px;
+
+}
+
+.projectDetail{
+    display: flex;
+    flex-direction: column;
+    min-width: 25rem;
+}
+.lineAndIndex{
+    display: flex;
+    align-items: center;
+}
+.projectIndex{
+    color: #bdb5b5;
+    font-size: 18px;
+    margin: 0 25px;
+    transition: all 0.5s ease-in-out;
+}
+.projectPlatform{
+    color: #cdc5c5;
+    font-size: 12px;
+    margin-top: 10px;
+    transition: all 0.5s ease-in-out;
+}
+.container:hover .projectPlatform{
+    color: #797878;
+    font-size: 14px;
+}
+.projectName{
+    color: #8F8E8E;
+    font-size: 2.5rem;
+    transition: all 0.5s cubic-bezier(.77,0,.175,1);
+}
+.container:hover .projectName{
+    color: #1a1919;
+    font-size: 2.8rem;
+}
+.rightSide{
+    margin-right: 3rem;
+    position: relative;
+    margin-left: auto;
+}
+
+.seeMyWork{
+    color: #000;
+    margin-right: 8px;
+    position: relative;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    position: relative;
+    z-index: 3;
+    min-width: 10rem;
+}
+.seeMyWorkCircle{
+    position: absolute;
+    top: -61%;
+    left: -10%;
+    background-color: #c3bfbf80;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    transition: all 0.5s ease-in-out;
+}
+.container:hover .seeMyWorkText{
+    position: relative;
+    z-index: 4;
+    color: #000;
+}
+.container:hover .seeMyWorkCircle{
+    width: 170px;
+    border-radius: 10px;
+    background-color: #c9c8c8;
+}
+
+.rightImageContainer{
+    position: absolute;
+    top: -136%;
+    right: -21%;
+    width: 20rem;
+    height: 14rem;
+
+}
+
+.rightImageContainer img{
+    width: 100%;
+    height: 100%;
+    /* transform: perspective(15px) rotateY(-0.8deg); */
+    transform: translateX(50%);
+    z-index: 2;
+    position: relative;
+    /* display: none; */
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s cubic-bezier(.77,0,.175,1);
+}
+
+.container:hover .rightImageContainer img{
+    /* display: block; */
+    transform: perspective(15px) rotateY(-0.8deg);
+    visibility: visible;
+    opacity: 1;
+}
+
+.rightBelowImageBackground{
+    width: 22rem;
+    height: 13rem;
+    z-index: 1;
+    background-color: #e0f1f7;
+    position: absolute;
+    top: 60%;
+    left: -140%;
+    transform: translateX(200%);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s cubic-bezier(.77,0,.175,1);
+}
+
+.container:hover .rightBelowImageBackground{
+    /* display: block; */
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+@media screen and (max-width:960px) {
+    .projectName{
+        font-size: 2.2rem;
+    }
+    .horizontalLine{
+        width: 80px;
+    }
+    .container:hover .projectName{
+        font-size: 2.5rem;
+    }
+    .container:hover .horizontalLine{
+        width: 105px;
+    }
+}
+@media screen and (max-width:835px) {
+   .rightBelowImageBackground{
+    width: 19rem;
+    height: 13rem;
+    left: -94%;
+   }
+   .rightImageContainer{
+    width: 17rem;
+    height: 12rem;
+   }
+}
+
+@media screen and (max-width:695px) {
+    .container{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .leftSide{
+        justify-content: flex-end;
+        margin-left: 7.5rem;
+    }
+}
+@media screen and (max-width:535px) {
+   
+    .leftSide{
+        margin-left: 15.5rem;
+    }
+}
+@media screen and (max-width:450px) {
+   
+    .leftSide{
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: flex-start;
+        /* text-align: center; */
+        margin: 0;
+
+    }
+    .rightSide{
+        margin-top: 4rem;
+    }
+    .lineAndIndex{
+        margin-right: auto;
+    }
+    .projectPlatform{
+        text-align: left;
+    }
+
+
+}
+
+

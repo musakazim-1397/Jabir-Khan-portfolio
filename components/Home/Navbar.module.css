@@ -1,0 +1,125 @@
+.navbarContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+    height: 5rem;
+    width: 100%;
+    background-color: #F9F9F9;
+    position: relative;
+}
+.logoContainer{
+    height: 60px;
+    width: 70px;
+
+}
+.logoContainer img{
+    width: 100%;
+    height: 100%;
+}
+
+.navbarLinksContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navlink{
+    color: #464646;
+    list-style: none;
+    padding: 0 1rem;
+    position: relative;
+    transition: all 0.5s ease-out;
+}
+.active{
+    color: #000;
+    font-weight: bold;
+    /* border-bottom: 2px solid #000; */
+}
+.activeDot{
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    border-radius: 50%;
+    height: 4px;
+    width: 4px;
+    background-color: #000;
+}
+.menuContainer{
+    display: none;
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    color: #000;
+    cursor: pointer;
+}
+@media screen and (max-width:770px) {
+    .navbarLinksContainer{
+        display: none;
+
+    }
+    .menuContainer{
+        display: flex;
+    }
+}
+
+.menu{
+    position: absolute;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    color: #464646;
+    z-index: 1;
+}
+.menuLinksContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.menulink{
+    color: #464646;
+    list-style: none;
+    margin: 2rem 0;
+    font-size: 50px;
+    position: relative;
+}
+.menuCloseContainer{
+    position: absolute;
+    top: 3%;
+    right: 5%;
+    color: white;
+    cursor: pointer;
+    z-index: 2;
+}
+.menL{
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.menulink:hover .menL{
+    text-decoration: line-through;
+    color: white;
+}
+.hiddenNumber{
+    visibility: hidden;
+    position: absolute;
+    inset: 0;
+    top: -108%;
+    left: 32%;
+    color: #464646;
+    z-index: -1;
+    font-size: 10rem;
+    transition: all 0.5s ease-out;
+}
+.menulink:hover .hiddenNumber{
+    visibility: visible;
+}
+
+.navlink:hover{
+    text-decoration: line-through;
+    transform: translateX(5px);
+    font-weight: bold;
+}

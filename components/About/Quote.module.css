@@ -1,0 +1,47 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 62vh;
+    width: 100%;
+    background-color: white;
+    position: relative;
+}
+.quote1{
+    font-size: 2.1rem;
+    text-align: center;
+    color: #000;
+}
+.name{
+    position: absolute;
+    top: 73%;
+    right: 21%;
+    color: #8f8e8e;
+}
+
+.quoteContainer{
+    display: none;
+}
+.quote2{
+    font-size: 2.1rem;
+    text-align: center;
+    color: #000;
+}
+
+@media screen and (max-width:950px) {
+    .quoteContainer{
+        display: flex;
+        text-align: center;
+        padding: 0 2rem;
+    }
+    .quote1{
+        display: none;
+    }
+}
+
+@media screen and (max-width:550px){
+    .quote2{
+        font-size: 1.8rem;
+    }
+}
