@@ -41,14 +41,15 @@ const HomePageProjects = () => {
     <div
       className={classes.container}
     >
-      {myProjects.map((project) => (
+      {myProjects.map((project,index) => (
         <motion.div
           layoutScroll
           style={{marginBottom: project.index=='04'?0:'6rem'}}
           initial={{ y: 200, opacity:0 }}
           whileInView={{ y: 0, opacity:1 }}
           viewport={{ once: true, amount:0.65 }}
-          transition={{ease:'easeOut', duration:0.7}}>
+          transition={{ease:'easeOut', duration:0.7}}
+          key={index}>
           <Project project={project} />
         </motion.div> 
   

@@ -9,7 +9,7 @@ const Footer = () => {
         <div className={classes.imageContainer}>
             <img src={'assets/footer.png'}/>
         </div>
-        <p className={classes.freelanceWork}>I'm available for freelance work.</p>
+        <p className={classes.freelanceWork}>I&apos;m available for freelance work.</p>
         <Link href={'/contact'} className={classes.seeMyWork}>
             <div className={classes.seeMyWorkCircle} />
             <div style={{ marginRight: "6px" }}>SAY HELLO</div>

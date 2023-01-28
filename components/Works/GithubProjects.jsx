@@ -60,8 +60,9 @@ const GithubProjects = () => {
         These projects are available on my github repository
       </p>
       <div className={classes.projects}>
-        {gitHubLinks.map((link) => (
+        {gitHubLinks.map((link,index) => (
           <motion.div
+            key={index}
             layoutScroll
             style={{ marginBottom: "2.5rem" }}
             initial={{ y: 100, opacity: 0 }}

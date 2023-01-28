@@ -52,9 +52,10 @@ const allMyProjects = [
 const ProjectsContainer = () => {
   return (
     <div className={classes.container}>
-         {allMyProjects.map((project) => (
+         {allMyProjects.map((project,index) => (
         <motion.div
           layoutScroll
+          key={index}
           style={{marginBottom:'6rem'}}
           initial={{ y: 200, opacity:0 }}
           whileInView={{ y: 0, opacity:1 }}
