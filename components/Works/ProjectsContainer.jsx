@@ -7,7 +7,7 @@ const allMyProjects = [
         index: "01",
         name: "AI Image Generator",
         related: "Web App",
-        link: "https://dall-e-mid-journey-clone-using-next-js-by-jabir-khan.vercel.app/",
+        link: "https://dall-e-mid-journey-clone-by-jabir-khan.vercel.app/",
         imagePath: "assets/ai-web-app.png",
       },
     {
